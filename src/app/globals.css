@@ -1,0 +1,190 @@
+@import url("/css/webflow.css");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+/* ── Site navbar (React-controlled, no Webflow w-nav binding) ── */
+
+.site-header {
+  z-index: 9999;
+  position: relative;
+}
+
+.site-header .header-right-side.v1 {
+  display: flex;
+  align-items: center;
+  gap: var(--main-spacers--small, 16px);
+}
+
+/* Hamburger: hidden on desktop */
+.site-header .menu-toggle {
+  display: none;
+  cursor: pointer;
+  border: none;
+  padding: 4px;
+  background-color: var(--core-colors-primary--100, #4839f0);
+  border-radius: 100%;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.site-header .menu-toggle .hamburger-menu-line {
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+.site-header .menu-toggle.is-open .hamburger-menu-line.top {
+  transform: translateY(5px) rotate(45deg);
+}
+
+.site-header .menu-toggle.is-open .hamburger-menu-line.bottom {
+  transform: translateY(-5px) rotate(-45deg);
+}
+
+.site-nav-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9997;
+  background: rgba(3, 3, 3, 0.45);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.site-nav-backdrop.is-visible {
+  display: block;
+}
+
+/* ── Mobile (≤ 991px) ── */
+@media screen and (max-width: 991px) {
+  .site-header .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .site-header .hidden-on-mobile-landscape {
+    display: none !important;
+  }
+
+  .site-header .header-right-side.v1 {
+    position: static;
+  }
+
+  /* Hide menu by default on mobile */
+  .site-header .site-nav-menu {
+    display: none !important;
+    float: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 9998;
+    padding: var(--main-spacers--regular, 24px) var(--main-spacers--small, 16px);
+    border-top: 1px solid var(--core-colors-neutral--800, #27272a);
+    border-bottom: 1px solid var(--core-colors-neutral--800, #27272a);
+    background-color: var(--core-colors-neutral--1000, #0a0a0b);
+    max-height: calc(100dvh - 80px);
+    overflow-y: auto;
+  }
+
+  /* Show menu when open */
+  .site-header.is-menu-open .site-nav-menu {
+    display: block !important;
+  }
+
+  .site-header .list-nav-menu {
+    flex-flow: column;
+    align-items: flex-start;
+    gap: var(--main-spacers--2x-extra-small, 12px);
+  }
+
+  .site-header .link-nav-item {
+    width: 100%;
+    display: flex;
+  }
+
+  .site-header .nav-link {
+    margin: 0;
+  }
+
+  .site-header .link-nav-item.show-on-mbl {
+    display: flex !important;
+    margin-top: 8px;
+  }
+
+  .site-header .header-dropdown.w-dropdown {
+    width: 100%;
+  }
+
+  .site-header .dropdown-toggle.w-dropdown-toggle {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    text-align: left;
+  }
+
+  .site-header .dropdown-content-wrapper.w-dropdown-list {
+    position: static;
+    transform: none;
+    width: 100%;
+  }
+
+  .site-header .dropdown-content-wrapper.w-dropdown-list.w--open {
+    display: block;
+  }
+}
+
+/* ── Desktop (≥ 992px) ── */
+@media screen and (min-width: 992px) {
+  .site-header .site-nav-menu {
+    display: block;
+    float: right;
+    position: relative;
+    background: transparent;
+  }
+
+  .site-header .list-nav-menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .site-header .link-nav-item.show-on-mbl {
+    display: none !important;
+  }
+
+  .site-header .dropdown-toggle.w-dropdown-toggle {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .site-nav-backdrop {
+    display: none !important;
+  }
+}
+
+[id] {
+  scroll-margin-top: 96px;
+}

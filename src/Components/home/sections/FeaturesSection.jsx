@@ -1,7 +1,23 @@
+import multiLanguageIconCloudwhisperWebflowTemplate from "@/assets/images/68380d54f4144148e4d6e62d_multi-language-icon-cloudwhisper-webflow-template.svg";
+import multiLangaugeTranslationImageCloudwhisperWebflowTemplate from "@/assets/images/682e384755a5383d695aa819_multi-langauge-translation-image-cloudwhisper-webflow-template.avif";
+import multiLangaugeTranslationImageCloudwhisperWebflowTemplateP500 from "@/assets/images/682e384755a5383d695aa819_multi-langauge-translation-image-cloudwhisper-webflow-template-p-500.avif";
+import cloudIconCloudwhisperWebflowTemplate from "@/assets/images/68380d53b32c3587d31b2c20_cloud-icon-cloudwhisper-webflow-template.svg";
+import cloudBackupImageCloudwhisperWebflowTemplate from "@/assets/images/682e384794909d43c44e07d1_cloud-backup-image-cloudwhisper-webflow-template.avif";
+import lightningFastSpeechToTextImageBottomCloudwhisperWebflowTemplate from "@/assets/images/68a5fcf09712fe9fb2f904ea_lightning-fast-speech-to-text-image-bottom-cloudwhisper-webflow-template.avif";
+import lightningFastSpeechToTextImageBottomCloudwhisperWebflowTemplateP500 from "@/assets/images/68a5fcf09712fe9fb2f904ea_lightning-fast-speech-to-text-image-bottom-cloudwhisper-webflow-template-p-500.png";
+import lightningFastIconCloudwhisperWebflowTemplate from "@/assets/images/68380d532df9bc94d4e627b0_lightning-fast-icon-cloudwhisper-webflow-template.svg";
+import industryLeadingLatencyImageCloudwhisperWebflowTemplate from "@/assets/images/682e38481e40b870e3475648_industry-leading-latency-image-cloudwhisper-webflow-template.avif";
+import industryLeadingLatencyImageCloudwhisperWebflowTemplateP500 from "@/assets/images/682e38481e40b870e3475648_industry-leading-latency-image-cloudwhisper-webflow-template-p-500.png";
+import industryLeadingIconCloudwhisperWebflowTemplate from "@/assets/images/68380d536b484359dfab24c5_industry-leading-icon-cloudwhisper-webflow-template.svg";
+import verticalShapeCloudwhisperWebflowTemplate from "@/assets/images/682cf631114e7650cebd3522_vertical-shape-cloudwhisper-webflow-template.svg";
+import horizontalShapeCloudwhisperWebflowTemplate from "@/assets/images/682cf630bf576e17a57fd554_horizontal-shape-cloudwhisper-webflow-template.svg";
+
+const img = (asset) => asset.src ?? asset;
+
 export default function FeaturesSection() {
   return (
     <section className="section square-section">
-            <div
+            <div style={{ opacity: 0, filter: "blur(8px)" }} data-w-id="838f8c25-925d-0b27-1ff4-87d56984b3fc"
              
              
               className="section-square-wrapper"
@@ -12,7 +28,7 @@ export default function FeaturesSection() {
                     id="w-node-dcc4f86c-c39d-9495-341c-e2f4e319c74d-7bed29e2"
                     className="features-v2-right-column"
                   >
-                    <div
+                    <div style={{ opacity: 0, filter: "blur(8px)" }} data-w-id="838f8c25-925d-0b27-1ff4-87d56984b3fe"
                       id="w-node-_838f8c25-925d-0b27-1ff4-87d56984b3fe-7bed29e2"
                      
                      
@@ -33,7 +49,7 @@ export default function FeaturesSection() {
                          
                           className="position-relative---z-index-1"
                         >
-                          <a
+                          <a data-w-id="193d53b0-557a-7be4-780d-950edf666c93"
                            
                             href="/company-pages/pricing"
                             className="tertiary-button w-inline-block"
@@ -54,7 +70,7 @@ export default function FeaturesSection() {
                     </div>
                     <div className="mg-top-large">
                       <div className="w-layout-grid features-v2-column">
-                        <div
+                        <div style={{ opacity: 0, filter: "blur(8px)" }} data-w-id="d57521b7-3871-ebbd-0e66-695d88621172"
                          
                          
                           className="card feature-v2-card"
@@ -76,7 +92,7 @@ export default function FeaturesSection() {
                                 className="square-gradient-icon-wrapper w-variant-894f2328-03f4-b381-6041-94597d1ae7c0"
                               >
                                 <img
-                                  src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/68380d54f4144148e4d6e62d_multi-language-icon-cloudwhisper-webflow-template.svg"
+                                  src={img(multiLanguageIconCloudwhisperWebflowTemplate)}
                                   loading="lazy"
                                   width="80"
                                   height="80"
@@ -94,21 +110,19 @@ export default function FeaturesSection() {
                             className="feature-v2-image-wrapper---02"
                           >
                             <img
-                              src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/682e384755a5383d695aa819_multi-langauge-translation-image-cloudwhisper-webflow-template.avif"
+                              src={img(multiLangaugeTranslationImageCloudwhisperWebflowTemplate)}
                               loading="lazy"
                               width="1540"
                               height="460"
                               alt="Multi Language Translation - CloudWhisper - Webflow Template | BRIX Templates"
-                              srcSet="
-                                https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/682e384755a5383d695aa819_multi-langauge-translation-image-cloudwhisper-webflow-template-p-500.avif  500w,
-                                https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/682e384755a5383d695aa819_multi-langauge-translation-image-cloudwhisper-webflow-template.avif       1540w
-                              "
+                              srcSet={`${img(multiLangaugeTranslationImageCloudwhisperWebflowTemplateP500)}  500w,
+                                ${img(multiLangaugeTranslationImageCloudwhisperWebflowTemplate)}       1540w`}
                               sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px"
                               className="image"
                             />
                           </div>
                         </div>
-                        <div
+                        <div style={{ opacity: 0, filter: "blur(8px)" }} data-w-id="d57521b7-3871-ebbd-0e66-695d8862117d"
                          
                          
                           className="card feature-v2-card"
@@ -120,7 +134,7 @@ export default function FeaturesSection() {
                                 className="square-gradient-icon-wrapper"
                               >
                                 <img
-                                  src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/68380d53b32c3587d31b2c20_cloud-icon-cloudwhisper-webflow-template.svg"
+                                  src={img(cloudIconCloudwhisperWebflowTemplate)}
                                   loading="lazy"
                                   width="80"
                                   height="80"
@@ -143,7 +157,7 @@ export default function FeaturesSection() {
                               </div>
                             </div>
                             <img
-                              src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/682e384794909d43c44e07d1_cloud-backup-image-cloudwhisper-webflow-template.avif"
+                              src={img(cloudBackupImageCloudwhisperWebflowTemplate)}
                               loading="lazy"
                               width="982"
                               height="708"
@@ -156,7 +170,7 @@ export default function FeaturesSection() {
                     </div>
                   </div>
                   <div className="w-layout-grid features-v2-column">
-                    <div
+                    <div style={{ opacity: 0, filter: "blur(8px)" }} data-w-id="21d25a42-8fd0-e5eb-ce74-078f498cf70a"
                      
                      
                       className="card feature-v2-card"
@@ -170,17 +184,15 @@ export default function FeaturesSection() {
                         </div>
                         <img
                           className="image"
-                          src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/68a5fcf09712fe9fb2f904ea_lightning-fast-speech-to-text-image-bottom-cloudwhisper-webflow-template.avif"
+                          src={img(lightningFastSpeechToTextImageBottomCloudwhisperWebflowTemplate)}
                           width="1184"
                           height="1584"
                           alt="Lighting Fast Speech To Text - CloudWhisper Webflow Template"
                           sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px"
                           id="w-node-_82c301fd-2218-74e4-ef50-8887f0dbc87a-7bed29e2"
                           loading="lazy"
-                          srcSet="
-                            https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/68a5fcf09712fe9fb2f904ea_lightning-fast-speech-to-text-image-bottom-cloudwhisper-webflow-template-p-500.png  500w,
-                            https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/68a5fcf09712fe9fb2f904ea_lightning-fast-speech-to-text-image-bottom-cloudwhisper-webflow-template.avif      1184w
-                          "
+                          srcSet={`${img(lightningFastSpeechToTextImageBottomCloudwhisperWebflowTemplateP500)}  500w,
+                            ${img(lightningFastSpeechToTextImageBottomCloudwhisperWebflowTemplate)}      1184w`}
                         />
                         <div
                           id="w-node-a3e02368-bc1f-8a12-51de-217e0eda5477-7bed29e2"
@@ -190,7 +202,7 @@ export default function FeaturesSection() {
                             className="square-gradient-icon-wrapper w-variant-a8fbe133-a0de-17ae-ad4f-0c906e4ee638"
                           >
                             <img
-                              src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/68380d532df9bc94d4e627b0_lightning-fast-icon-cloudwhisper-webflow-template.svg"
+                              src={img(lightningFastIconCloudwhisperWebflowTemplate)}
                               loading="lazy"
                               width="80"
                               height="80"
@@ -204,7 +216,7 @@ export default function FeaturesSection() {
                         </div>
                       </div>
                     </div>
-                    <div
+                    <div style={{ opacity: 0, filter: "blur(8px)" }} data-w-id="c3406b86-46e6-6aae-c7ce-19d005b58c69"
                      
                      
                       className="card feature-v2-card"
@@ -218,17 +230,15 @@ export default function FeaturesSection() {
                         </div>
                         <img
                           className="image feature-v2-image---02"
-                          src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/682e38481e40b870e3475648_industry-leading-latency-image-cloudwhisper-webflow-template.avif"
+                          src={img(industryLeadingLatencyImageCloudwhisperWebflowTemplate)}
                           width="1275"
                           height="1275"
                           alt="Industry Leading Latency - CloudWhisper - Webflow Template | BRIX Templates"
                           sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px"
                           id="w-node-c3406b86-46e6-6aae-c7ce-19d005b58c71-7bed29e2"
                           loading="lazy"
-                          srcSet="
-                            https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/682e38481e40b870e3475648_industry-leading-latency-image-cloudwhisper-webflow-template-p-500.png  500w,
-                            https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/682e38481e40b870e3475648_industry-leading-latency-image-cloudwhisper-webflow-template.avif      1275w
-                          "
+                          srcSet={`${img(industryLeadingLatencyImageCloudwhisperWebflowTemplateP500)}  500w,
+                            ${img(industryLeadingLatencyImageCloudwhisperWebflowTemplate)}      1275w`}
                         />
                         <div
                           id="w-node-c3406b86-46e6-6aae-c7ce-19d005b58c72-7bed29e2"
@@ -238,7 +248,7 @@ export default function FeaturesSection() {
                             className="square-gradient-icon-wrapper w-variant-5af9267f-c951-4c20-fdf6-ffba7b327258"
                           >
                             <img
-                              src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/68380d536b484359dfab24c5_industry-leading-icon-cloudwhisper-webflow-template.svg"
+                              src={img(industryLeadingIconCloudwhisperWebflowTemplate)}
                               loading="lazy"
                               width="80"
                               height="80"
@@ -256,12 +266,12 @@ export default function FeaturesSection() {
                 </div>
               </div>
               <img
-                src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/682cf631114e7650cebd3522_vertical-shape-cloudwhisper-webflow-template.svg"
+                src={img(verticalShapeCloudwhisperWebflowTemplate)}
                 loading="lazy"
                 alt=""
                 className="section-shape-right"
               /><img
-                src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/682cf630bf576e17a57fd554_horizontal-shape-cloudwhisper-webflow-template.svg"
+                src={img(horizontalShapeCloudwhisperWebflowTemplate)}
                 loading="lazy"
                 alt=""
                 className="section-shape-bottom left-20"

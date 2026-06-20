@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",        // Itha pudhusa add pannanum
   images: {
     remotePatterns: [
       {

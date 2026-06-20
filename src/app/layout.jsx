@@ -22,9 +22,20 @@ export const metadata = {
   },
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`w-mod-js ${inter.variable} ${interTight.variable}`}>
+    <html
+      lang="en"
+      data-wf-domain="cloudwhispertemplate.webflow.io"
+      data-wf-page="682751255bcef0a07bed29e2"
+      data-wf-site="682751255bcef0a07bed2a01"
+      className={`w-mod-js ${inter.variable} ${interTight.variable}`}
+    >
       <body className={interTight.className}>{children}</body>
     </html>
   );

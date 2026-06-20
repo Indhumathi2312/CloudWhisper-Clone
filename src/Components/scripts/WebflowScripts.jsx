@@ -2,10 +2,43 @@
 
 import Script from "next/script";
 import { useEffect } from "react";
+import { initAll, cleanupAnimations } from "./initAnimations";
 
 export default function WebflowScripts() {
   useEffect(() => {
     document.documentElement.classList.add("w-mod-js");
+
+    const removeWebflowBadge = () => {
+      document.querySelectorAll(".w-webflow-badge, .brix-badges-wrapper").forEach((el) => {
+        el.remove();
+      });
+    };
+
+    const checkAndInit = () => {
+      removeWebflowBadge();
+      if (window.gsap && window.ScrollTrigger && window.Observer && window.SplitText) {
+        initAll();
+        removeWebflowBadge();
+      } else {
+        setTimeout(checkAndInit, 100);
+      }
+    };
+
+    removeWebflowBadge();
+    const badgeObserver = new MutationObserver(removeWebflowBadge);
+    badgeObserver.observe(document.body, { childList: true, subtree: true });
+
+    if (document.readyState === "complete") {
+      checkAndInit();
+    } else {
+      window.addEventListener("load", checkAndInit);
+    }
+
+    return () => {
+      window.removeEventListener("load", checkAndInit);
+      badgeObserver.disconnect();
+      cleanupAnimations();
+    };
   }, []);
 
   return (
@@ -41,42 +74,6 @@ export default function WebflowScripts() {
       />
       <Script src="https://cdn.prod.website-files.com/gsap/3.15.0/Observer.min.js" strategy="afterInteractive" />
       <Script src="https://cdn.prod.website-files.com/gsap/3.15.0/SplitText.min.js" strategy="afterInteractive" />
-      <Script id="webflow-gsap-init" strategy="afterInteractive">
-        {`
-          window.addEventListener('load', function () {
-            if (!window.gsap) return;
-            var gsap = window.gsap;
-            gsap.registerPlugin(window.ScrollTrigger, window.SplitText, window.Observer);
-
-            document.querySelectorAll('.count-up-number-animation').forEach(function (element, index) {
-              var targetValue = parseFloat(element.getAttribute('data-count')) || 0;
-              gsap.fromTo(
-                element,
-                { textContent: 0 },
-                {
-                  textContent: targetValue,
-                  duration: 2,
-                  ease: 'power1.out',
-                  snap: { textContent: 1 },
-                  delay: index * 0.1,
-                  scrollTrigger: { trigger: element, start: 'top 80%', once: true },
-                  onUpdate: function () {
-                    element.textContent = Math.round(parseFloat(element.textContent)).toLocaleString();
-                  },
-                }
-              );
-            });
-
-            document.querySelectorAll('.testimonial-marquee-row').forEach(function (row) {
-              row.querySelectorAll('.marquee-row-testimonials').forEach(function (track) {
-                gsap.to(track, { xPercent: -50, ease: 'none', duration: 40, repeat: -1 });
-              });
-            });
-
-            if (window.ScrollTrigger) window.ScrollTrigger.refresh();
-          });
-        `}
-      </Script>
     </>
   );
 }

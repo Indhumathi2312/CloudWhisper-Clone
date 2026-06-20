@@ -1,7 +1,18 @@
+import horizontalShapeCloudwhisperWebflowTemplate from "@/assets/images/682cf630bf576e17a57fd554_horizontal-shape-cloudwhisper-webflow-template.svg";
+import ctaV2BgGradient1CloudwhisperWebflowTemplate from "@/assets/images/68b0bd107b061378c6a062a1_cta-v2-bg-gradient-1-cloudwhisper-webflow-template.avif";
+import ctaV2BgGradient1CloudwhisperWebflowTemplateP500 from "@/assets/images/68b0bd107b061378c6a062a1_cta-v2-bg-gradient-1-cloudwhisper-webflow-template-p-500.avif";
+import ctaV2BgGradient1CloudwhisperWebflowTemplateP800 from "@/assets/images/68b0bd107b061378c6a062a1_cta-v2-bg-gradient-1-cloudwhisper-webflow-template-p-800.png";
+import ctaV2BgGradient2CloudwhisperWebflowTemplate from "@/assets/images/68b0bd10c40519207871bd0c_cta-v2-bg-gradient-2-cloudwhisper-webflow-template.avif";
+import ctaV2BgGradient2CloudwhisperWebflowTemplateP500 from "@/assets/images/68b0bd10c40519207871bd0c_cta-v2-bg-gradient-2-cloudwhisper-webflow-template-p-500.avif";
+import ctaV2BgGradient3CloudwhisperWebflowTemplate from "@/assets/images/68b0bd10922bd84a127502f2_cta-v2-bg-gradient-3-cloudwhisper-webflow-template.avif";
+import ctaV2BgGradient3CloudwhisperWebflowTemplateP500 from "@/assets/images/68b0bd10922bd84a127502f2_cta-v2-bg-gradient-3-cloudwhisper-webflow-template-p-500.avif";
+
+const img = (asset) => asset.src ?? asset;
+
 export default function CtaSection() {
   return (
     <section className="section square-section">
-            <div
+            <div style={{ opacity: 0, filter: "blur(8px)" }} data-w-id="b6aa4d4c-a1e9-cd2d-c55b-2ed0444dae15"
              
              
               className="section-square-wrapper cta-v2"
@@ -76,14 +87,14 @@ export default function CtaSection() {
                 </div>
               </div>
               <img
-                src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/682cf630bf576e17a57fd554_horizontal-shape-cloudwhisper-webflow-template.svg"
+                src={img(horizontalShapeCloudwhisperWebflowTemplate)}
                 loading="lazy"
                 width="294"
                 height="70"
                 alt=""
                 className="section-shape-top left-40"
               /><img
-                src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/682cf630bf576e17a57fd554_horizontal-shape-cloudwhisper-webflow-template.svg"
+                src={img(horizontalShapeCloudwhisperWebflowTemplate)}
                 loading="lazy"
                 width="294"
                 height="70"
@@ -91,44 +102,38 @@ export default function CtaSection() {
                 className="section-shape-bottom left-40"
               /><img
                 className="section-bg-gradient left"
-                src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/68b0bd107b061378c6a062a1_cta-v2-bg-gradient-1-cloudwhisper-webflow-template.avif"
+                src={img(ctaV2BgGradient1CloudwhisperWebflowTemplate)}
                 width="2800"
                 height="976"
                 alt=""
                
                 sizes="(max-width: 2800px) 100vw, 2800px"
                 loading="lazy"
-                srcSet="
-                  https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/68b0bd107b061378c6a062a1_cta-v2-bg-gradient-1-cloudwhisper-webflow-template-p-500.avif  500w,
-                  https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/68b0bd107b061378c6a062a1_cta-v2-bg-gradient-1-cloudwhisper-webflow-template-p-800.png   800w,
-                  https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/68b0bd107b061378c6a062a1_cta-v2-bg-gradient-1-cloudwhisper-webflow-template.avif       2800w
-                "
+                srcSet={`${img(ctaV2BgGradient1CloudwhisperWebflowTemplateP500)}  500w,
+                  ${img(ctaV2BgGradient1CloudwhisperWebflowTemplateP800)}   800w,
+                  ${img(ctaV2BgGradient1CloudwhisperWebflowTemplate)}       2800w`}
               /><img
                 className="section-bg-gradient middle"
-                src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/68b0bd10c40519207871bd0c_cta-v2-bg-gradient-2-cloudwhisper-webflow-template.avif"
+                src={img(ctaV2BgGradient2CloudwhisperWebflowTemplate)}
                 width="2800"
                 height="976"
                 alt=""
                
                 sizes="(max-width: 2800px) 100vw, 2800px"
                 loading="lazy"
-                srcSet="
-                  https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/68b0bd10c40519207871bd0c_cta-v2-bg-gradient-2-cloudwhisper-webflow-template-p-500.avif  500w,
-                  https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/68b0bd10c40519207871bd0c_cta-v2-bg-gradient-2-cloudwhisper-webflow-template.avif       2800w
-                "
+                srcSet={`${img(ctaV2BgGradient2CloudwhisperWebflowTemplateP500)}  500w,
+                  ${img(ctaV2BgGradient2CloudwhisperWebflowTemplate)}       2800w`}
               /><img
                 className="section-bg-gradient right"
-                src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/68b0bd10922bd84a127502f2_cta-v2-bg-gradient-3-cloudwhisper-webflow-template.avif"
+                src={img(ctaV2BgGradient3CloudwhisperWebflowTemplate)}
                 width="2800"
                 height="976"
                 alt=""
                
                 sizes="(max-width: 2800px) 100vw, 2800px"
                 loading="lazy"
-                srcSet="
-                  https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/68b0bd10922bd84a127502f2_cta-v2-bg-gradient-3-cloudwhisper-webflow-template-p-500.avif  500w,
-                  https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/68b0bd10922bd84a127502f2_cta-v2-bg-gradient-3-cloudwhisper-webflow-template.avif       2800w
-                "
+                srcSet={`${img(ctaV2BgGradient3CloudwhisperWebflowTemplateP500)}  500w,
+                  ${img(ctaV2BgGradient3CloudwhisperWebflowTemplate)}       2800w`}
               />
             </div>
           </section>

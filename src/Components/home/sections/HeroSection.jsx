@@ -1,10 +1,25 @@
+import homeV2HeroBg1CloudwhisperWebflowTemplate from "@/assets/images/68b0a558a4d9943de708cc1b_home-v2-hero-bg-1-cloudwhisper-webflow-template.avif";
+import homeV2HeroBg1CloudwhisperWebflowTemplateP500 from "@/assets/images/68b0a558a4d9943de708cc1b_home-v2-hero-bg-1-cloudwhisper-webflow-template-p-500.png";
+import homeV2HeroBg2CloudwhisperWebflowTemplate from "@/assets/images/68b0a55762f9bbbda0a02dcf_home-v2-hero-bg-2-cloudwhisper-webflow-template.avif";
+import homeV2HeroBg2CloudwhisperWebflowTemplateP500 from "@/assets/images/68b0a55762f9bbbda0a02dcf_home-v2-hero-bg-2-cloudwhisper-webflow-template-p-500.png";
+import heroV2MainImageCloudwhisperWebflowTemplate from "@/assets/images/683735c7a4d0d26ff44d8cc1_hero-v2-main-image-cloudwhisper-webflow-template.avif";
+import heroV2MainImageCloudwhisperWebflowTemplateP500 from "@/assets/images/683735c7a4d0d26ff44d8cc1_hero-v2-main-image-cloudwhisper-webflow-template-p-500.avif";
+import heroV2LeftImageCloudwhisperWebflowTemplate from "@/assets/images/683735c684f4560ab8d69be5_hero-v2-left-image-cloudwhisper-webflow-template.avif";
+import heroV2RightImageCloudwhisperWebflowTemplate from "@/assets/images/683735c63b9df4b856d1d8cc_hero-v2-right-image-cloudwhisper-webflow-template.avif";
+import heroV2RightImageCloudwhisperWebflowTemplateP500 from "@/assets/images/683735c63b9df4b856d1d8cc_hero-v2-right-image-cloudwhisper-webflow-template-p-500.png";
+import accuracyIconCloudwhisperWebflowTemplate from "@/assets/images/6837742d2b8e7b3d47a6dd79_accuracy-icon-cloudwhisper-webflow-template.svg";
+import wordsIconCloudwhisperWebflowTemplate from "@/assets/images/6837742c03b875d000d1fa64_words-icon-cloudwhisper-webflow-template.svg";
+import clientsIconCloudwhisperWebflowTemplate from "@/assets/images/6837742d98a22d562beb8a81_clients-icon-cloudwhisper-webflow-template.svg";
+
+const img = (asset) => asset.src ?? asset;
+
 export default function HeroSection() {
   return (
     <section className="section hero-v2">
             <div
               className="w-layout-blockcontainer container-default position-relative---z-index-1 w-container"
             >
-              <div
+              <div style={{ opacity: 0, filter: "blur(8px)" }} data-w-id="499b8fc8-5056-e2af-9401-033b5f813d40"
                
                
                 className="inner-container _340px center"
@@ -18,7 +33,7 @@ export default function HeroSection() {
                        
                         className="position-relative---z-index-1"
                       >
-                        <a
+                        <a data-w-id="d7bc6201-7e14-514d-b502-57acf8dc3329"
                          
                           href="/company-pages/pricing"
                           className="primary-button w-inline-block"
@@ -32,13 +47,13 @@ export default function HeroSection() {
                   </div>
                 </div>
               </div>
-              <div
+              <div data-w-id="96973e2c-cd67-9381-4b28-a0391dbc753e"
                
                 className="image-wrapper hero-v2"
               >
-                <img
+                <img style={{ opacity: 0, filter: "blur(8px)" }} data-w-id="590da702-a97a-c4c1-eec3-c5cdd6bf0f87"
                   className="hero-v2-bg-image"
-                  src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/68b0a558a4d9943de708cc1b_home-v2-hero-bg-1-cloudwhisper-webflow-template.avif"
+                  src={img(homeV2HeroBg1CloudwhisperWebflowTemplate)}
                   width="1527"
                   height="1527"
                   alt=""
@@ -46,13 +61,11 @@ export default function HeroSection() {
                   sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px"
                  
                   loading="eager"
-                  srcSet="
-                    https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/68b0a558a4d9943de708cc1b_home-v2-hero-bg-1-cloudwhisper-webflow-template-p-500.png  500w,
-                    https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/68b0a558a4d9943de708cc1b_home-v2-hero-bg-1-cloudwhisper-webflow-template.avif      1527w
-                  "
-                /><img
+                  srcSet={`${img(homeV2HeroBg1CloudwhisperWebflowTemplateP500)}  500w,
+                    ${img(homeV2HeroBg1CloudwhisperWebflowTemplate)}      1527w`}
+                /><img style={{ opacity: 0, filter: "blur(8px)" }} data-w-id="a9d8d660-7717-742f-0cba-721e1ecdc9b9"
                   className="hero-v2-bg-image"
-                  src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/68b0a55762f9bbbda0a02dcf_home-v2-hero-bg-2-cloudwhisper-webflow-template.avif"
+                  src={img(homeV2HeroBg2CloudwhisperWebflowTemplate)}
                   width="1527"
                   height="1527"
                   alt=""
@@ -60,13 +73,11 @@ export default function HeroSection() {
                   sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px"
                  
                   loading="eager"
-                  srcSet="
-                    https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/68b0a55762f9bbbda0a02dcf_home-v2-hero-bg-2-cloudwhisper-webflow-template-p-500.png  500w,
-                    https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/68b0a55762f9bbbda0a02dcf_home-v2-hero-bg-2-cloudwhisper-webflow-template.avif      1527w
-                  "
-                /><img
+                  srcSet={`${img(homeV2HeroBg2CloudwhisperWebflowTemplateP500)}  500w,
+                    ${img(homeV2HeroBg2CloudwhisperWebflowTemplate)}      1527w`}
+                /><img style={{ opacity: 0, filter: "blur(8px)" }} data-w-id="024a6514-fd10-0c10-71b3-80128d3c695b"
                   className="hero-v2-main-image"
-                  src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/683735c7a4d0d26ff44d8cc1_hero-v2-main-image-cloudwhisper-webflow-template.avif"
+                  src={img(heroV2MainImageCloudwhisperWebflowTemplate)}
                   width="1640"
                   height="1702"
                   alt="Hero V2 Main Image - CloudWhisper - Webflow Template | BRIX Templates"
@@ -74,12 +85,10 @@ export default function HeroSection() {
                   sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px"
                  
                   loading="eager"
-                  srcSet="
-                    https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/683735c7a4d0d26ff44d8cc1_hero-v2-main-image-cloudwhisper-webflow-template-p-500.avif  500w,
-                    https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/683735c7a4d0d26ff44d8cc1_hero-v2-main-image-cloudwhisper-webflow-template.avif       1640w
-                  "
-                /><img
-                  src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/683735c684f4560ab8d69be5_hero-v2-left-image-cloudwhisper-webflow-template.avif"
+                  srcSet={`${img(heroV2MainImageCloudwhisperWebflowTemplateP500)}  500w,
+                    ${img(heroV2MainImageCloudwhisperWebflowTemplate)}       1640w`}
+                /><img style={{ opacity: 0, filter: "blur(8px)" }} data-w-id="13716798-6077-d131-677e-b8b78092253d"
+                  src={img(heroV2LeftImageCloudwhisperWebflowTemplate)}
                   loading="eager"
                   width="1130"
                   height="1012"
@@ -87,9 +96,9 @@ export default function HeroSection() {
                  
                  
                   className="hero-v2-left-image"
-                /><img
+                /><img style={{ opacity: 0, filter: "blur(8px)" }} data-w-id="550aa607-4e88-3cea-752c-c18388574ecd"
                   className="hero-v2-right-image"
-                  src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/683735c63b9df4b856d1d8cc_hero-v2-right-image-cloudwhisper-webflow-template.avif"
+                  src={img(heroV2RightImageCloudwhisperWebflowTemplate)}
                   width="1130"
                   height="1270"
                   alt="Hero V2 Right Image - CloudWhisper - Webflow Template | BRIX Templates"
@@ -97,25 +106,23 @@ export default function HeroSection() {
                   sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px"
                  
                   loading="eager"
-                  srcSet="
-                    https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/683735c63b9df4b856d1d8cc_hero-v2-right-image-cloudwhisper-webflow-template-p-500.png  500w,
-                    https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/683735c63b9df4b856d1d8cc_hero-v2-right-image-cloudwhisper-webflow-template.avif      1130w
-                  "
+                  srcSet={`${img(heroV2RightImageCloudwhisperWebflowTemplateP500)}  500w,
+                    ${img(heroV2RightImageCloudwhisperWebflowTemplate)}      1130w`}
                 />
               </div>
-              <div className="hero-v2-stats-wrapper">
+              <div style={{ opacity: 0, filter: "blur(8px)" }} data-w-id="4a5cf3c6-7783-7f57-8c18-cb63c5dea815" className="hero-v2-stats-wrapper">
                 <div
                  
                  
                 >
-                  <div className="display-10 stat-gradient-01">
+                  <div style={{ opacity: 0, filter: "blur(8px)" }} data-w-id="42aa2f3c-189a-b78e-2bb4-c3e442944d85" className="display-10 stat-gradient-01">
                     <span data-count="94" className="count-up-number-animation">94</span
                     >%
                   </div>
-                  <div className="mg-top-3x-extra-small">
+                  <div style={{ opacity: 0, filter: "blur(8px)" }} data-w-id="bad0d4da-b306-6776-a090-04b77252833d" className="mg-top-3x-extra-small">
                     <div className="flex align-top center-mbl">
                       <img
-                        src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/6837742d2b8e7b3d47a6dd79_accuracy-icon-cloudwhisper-webflow-template.svg"
+                        src={img(accuracyIconCloudwhisperWebflowTemplate)}
                         loading="eager"
                         width="16"
                         height="16"
@@ -141,7 +148,7 @@ export default function HeroSection() {
                   <div className="mg-top-3x-extra-small">
                     <div className="flex align-top center-mbl">
                       <img
-                        src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/6837742c03b875d000d1fa64_words-icon-cloudwhisper-webflow-template.svg"
+                        src={img(wordsIconCloudwhisperWebflowTemplate)}
                         loading="eager"
                         width="16"
                         height="16"
@@ -168,7 +175,7 @@ export default function HeroSection() {
                   <div className="mg-top-3x-extra-small">
                     <div className="flex align-top center-mbl">
                       <img
-                        src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/6837742d98a22d562beb8a81_clients-icon-cloudwhisper-webflow-template.svg"
+                        src={img(clientsIconCloudwhisperWebflowTemplate)}
                         loading="eager"
                         width="16"
                         height="16"

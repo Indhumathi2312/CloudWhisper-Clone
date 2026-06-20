@@ -1,8 +1,23 @@
+import tabAndSpeakIconCloudwhisperWebflowTemplate from "@/assets/images/68387409d2bd30d6829d1d32_tab-and-speak-icon-cloudwhisper-webflow-template.svg";
+import aiWorkItsMagicIconCloudwhisperWebflowTemplate from "@/assets/images/683874092ac4419ab85c47cc_ai-work-its-magic-icon-cloudwhisper-webflow-template.svg";
+import editSaveAndShareIconCloudwhisperWebflowTemplate from "@/assets/images/68387409ab41739837ec3670_edit-save-and-share-icon-cloudwhisper-webflow-template.svg";
+import tabAndSpeakImageCloudwhisperWebflowTemplate from "@/assets/images/683873f96807a03275d7b66e_tab-and-speak-image-cloudwhisper-webflow-template.avif";
+import tabAndSpeakImageCloudwhisperWebflowTemplateP500 from "@/assets/images/683873f96807a03275d7b66e_tab-and-speak-image-cloudwhisper-webflow-template-p-500.avif";
+import aiWorkItsMagicImageCloudwhisperWebflowTemplate from "@/assets/images/683873f84df5baea9419be39_ai-work-its-magic-image-cloudwhisper-webflow-template.avif";
+import aiWorkItsMagicImageCloudwhisperWebflowTemplateP500 from "@/assets/images/683873f84df5baea9419be39_ai-work-its-magic-image-cloudwhisper-webflow-template-p-500.avif";
+import aiWorkItsMagicImageCloudwhisperWebflowTemplateP800 from "@/assets/images/683873f84df5baea9419be39_ai-work-its-magic-image-cloudwhisper-webflow-template-p-800.avif";
+import editSaveAndShareImageCloudwhisperWebflowTemplate from "@/assets/images/683873f854fe674fdc01fcbe_edit-save-and-share-image-cloudwhisper-webflow-template.avif";
+import editSaveAndShareImageCloudwhisperWebflowTemplateP500 from "@/assets/images/683873f854fe674fdc01fcbe_edit-save-and-share-image-cloudwhisper-webflow-template-p-500.avif";
+import editSaveAndShareImageCloudwhisperWebflowTemplateP800 from "@/assets/images/683873f854fe674fdc01fcbe_edit-save-and-share-image-cloudwhisper-webflow-template-p-800.avif";
+import editSaveAndShareImageCloudwhisperWebflowTemplateP1080 from "@/assets/images/683873f854fe674fdc01fcbe_edit-save-and-share-image-cloudwhisper-webflow-template-p-1080.avif";
+
+const img = (asset) => asset.src ?? asset;
+
 export default function ProcessSection() {
   return (
     <section className="section">
             <div className="w-layout-blockcontainer container-default w-container">
-              <div
+              <div style={{ opacity: 0, filter: "blur(8px)" }} data-w-id="6f497ca8-8a44-0506-1bff-ad56658293fa"
                
                
                 className="title-left-content-right"
@@ -16,7 +31,7 @@ export default function ProcessSection() {
                  
                   className="position-relative---z-index-1"
                 >
-                  <a
+                  <a data-w-id="d7bc6201-7e14-514d-b502-57acf8dc3329"
                    
                     href="/company-pages/pricing"
                     className="primary-button w-inline-block"
@@ -28,7 +43,7 @@ export default function ProcessSection() {
                 </div>
               </div>
               <div className="mg-top-regular">
-                <div
+                <div style={{ opacity: 0, filter: "blur(8px)" }} data-w-id="31a26215-6715-683c-08b5-5a56ecf2e989"
                  
                  
                   data-current="Tab 1"
@@ -41,7 +56,7 @@ export default function ProcessSection() {
                     id="w-node-_31a26215-6715-683c-08b5-5a56ecf2e98a-7bed29e2"
                     className="tabs-menu w-tab-menu"
                   >
-                    <a
+                    <a data-w-id="31a26215-6715-683c-08b5-5a56ecf2e98b"
                       data-w-tab="Tab 1"
                       id="w-node-_31a26215-6715-683c-08b5-5a56ecf2e98b-7bed29e2"
                      
@@ -57,7 +72,7 @@ export default function ProcessSection() {
                               className="square-gradient-icon-wrapper w-variant-a8fbe133-a0de-17ae-ad4f-0c906e4ee638"
                             >
                               <img
-                                src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/68387409d2bd30d6829d1d32_tab-and-speak-icon-cloudwhisper-webflow-template.svg"
+                                src={img(tabAndSpeakIconCloudwhisperWebflowTemplate)}
                                 loading="lazy"
                                 width="80"
                                 height="80"
@@ -90,7 +105,7 @@ export default function ProcessSection() {
                             className="accordion-line vertical"
                           ></div>
                         </div></div></a
-                    ><a
+                    ><a data-w-id="31a26215-6715-683c-08b5-5a56ecf2e98e"
                       data-w-tab="Tab 2"
                      
                       className="card tab-card w-inline-block w-tab-link"
@@ -105,7 +120,7 @@ export default function ProcessSection() {
                               className="square-gradient-icon-wrapper"
                             >
                               <img
-                                src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/683874092ac4419ab85c47cc_ai-work-its-magic-icon-cloudwhisper-webflow-template.svg"
+                                src={img(aiWorkItsMagicIconCloudwhisperWebflowTemplate)}
                                 loading="lazy"
                                 width="80"
                                 height="80"
@@ -136,7 +151,7 @@ export default function ProcessSection() {
                             className="accordion-line vertical"
                           ></div>
                         </div></div></a
-                    ><a
+                    ><a data-w-id="31a26215-6715-683c-08b5-5a56ecf2e991"
                       data-w-tab="Tab 3"
                      
                       className="card tab-card w-inline-block w-tab-link"
@@ -151,7 +166,7 @@ export default function ProcessSection() {
                               className="square-gradient-icon-wrapper w-variant-be748821-7c9e-5f64-3f51-78fcc0b290d8"
                             >
                               <img
-                                src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/68387409ab41739837ec3670_edit-save-and-share-icon-cloudwhisper-webflow-template.svg"
+                                src={img(editSaveAndShareIconCloudwhisperWebflowTemplate)}
                                 loading="lazy"
                                 width="80"
                                 height="80"
@@ -195,12 +210,10 @@ export default function ProcessSection() {
                         width="1986"
                         height="1338"
                         alt="Tab and Speak - CloudWhisper - Webflow Template | BRIX Templates"
-                        src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/683873f96807a03275d7b66e_tab-and-speak-image-cloudwhisper-webflow-template.avif"
+                        src={img(tabAndSpeakImageCloudwhisperWebflowTemplate)}
                         loading="lazy"
-                        srcSet="
-                          https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/683873f96807a03275d7b66e_tab-and-speak-image-cloudwhisper-webflow-template-p-500.avif  500w,
-                          https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/683873f96807a03275d7b66e_tab-and-speak-image-cloudwhisper-webflow-template.avif       1986w
-                        "
+                        srcSet={`${img(tabAndSpeakImageCloudwhisperWebflowTemplateP500)}  500w,
+                          ${img(tabAndSpeakImageCloudwhisperWebflowTemplate)}       1986w`}
                         sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px"
                         className="image cover-image"
                       />
@@ -210,13 +223,11 @@ export default function ProcessSection() {
                         width="1986"
                         height="1338"
                         alt="AI Works Its Magic Image - CloudWhisper - Webflow Template | BRIX Templates"
-                        src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/683873f84df5baea9419be39_ai-work-its-magic-image-cloudwhisper-webflow-template.avif"
+                        src={img(aiWorkItsMagicImageCloudwhisperWebflowTemplate)}
                         loading="lazy"
-                        srcSet="
-                          https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/683873f84df5baea9419be39_ai-work-its-magic-image-cloudwhisper-webflow-template-p-500.avif  500w,
-                          https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/683873f84df5baea9419be39_ai-work-its-magic-image-cloudwhisper-webflow-template-p-800.avif  800w,
-                          https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/683873f84df5baea9419be39_ai-work-its-magic-image-cloudwhisper-webflow-template.avif       1986w
-                        "
+                        srcSet={`${img(aiWorkItsMagicImageCloudwhisperWebflowTemplateP500)}  500w,
+                          ${img(aiWorkItsMagicImageCloudwhisperWebflowTemplateP800)}  800w,
+                          ${img(aiWorkItsMagicImageCloudwhisperWebflowTemplate)}       1986w`}
                         sizes="100vw"
                         className="image cover-image"
                       />
@@ -226,14 +237,12 @@ export default function ProcessSection() {
                         width="1986"
                         height="1338"
                         alt="Edit Save and Share - CloudWhisper - Webflow Template | BRIX Templates"
-                        src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/683873f854fe674fdc01fcbe_edit-save-and-share-image-cloudwhisper-webflow-template.avif"
+                        src={img(editSaveAndShareImageCloudwhisperWebflowTemplate)}
                         loading="lazy"
-                        srcSet="
-                          https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/683873f854fe674fdc01fcbe_edit-save-and-share-image-cloudwhisper-webflow-template-p-500.avif   500w,
-                          https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/683873f854fe674fdc01fcbe_edit-save-and-share-image-cloudwhisper-webflow-template-p-800.avif   800w,
-                          https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/683873f854fe674fdc01fcbe_edit-save-and-share-image-cloudwhisper-webflow-template-p-1080.avif 1080w,
-                          https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/683873f854fe674fdc01fcbe_edit-save-and-share-image-cloudwhisper-webflow-template.avif        1986w
-                        "
+                        srcSet={`${img(editSaveAndShareImageCloudwhisperWebflowTemplateP500)}   500w,
+                          ${img(editSaveAndShareImageCloudwhisperWebflowTemplateP800)}   800w,
+                          ${img(editSaveAndShareImageCloudwhisperWebflowTemplateP1080)} 1080w,
+                          ${img(editSaveAndShareImageCloudwhisperWebflowTemplate)}        1986w`}
                         sizes="100vw"
                         className="image cover-image"
                       />

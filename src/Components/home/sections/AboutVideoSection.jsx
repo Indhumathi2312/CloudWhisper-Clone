@@ -1,19 +1,27 @@
+import playIconCloudwhisperWebflowTemplate from "@/assets/images/6838c0b6353fd557c5547bec_play-icon-cloudwhisper-webflow-template.avif";
+import aboutUsImageCloudwhisperWebflowTemplate from "@/assets/images/6838c025f204237d64176dac_about-us-image-cloudwhisper-webflow-template.avif";
+import aboutUsImageCloudwhisperWebflowTemplateP500 from "@/assets/images/6838c025f204237d64176dac_about-us-image-cloudwhisper-webflow-template-p-500.avif";
+import aboutUsImageCloudwhisperWebflowTemplateP800 from "@/assets/images/6838c025f204237d64176dac_about-us-image-cloudwhisper-webflow-template-p-800.avif";
+import aboutUsImageCloudwhisperWebflowTemplateP1080 from "@/assets/images/6838c025f204237d64176dac_about-us-image-cloudwhisper-webflow-template-p-1080.avif";
+
+const img = (asset) => asset.src ?? asset;
+
 export default function AboutVideoSection() {
   return (
     <section className="section">
             <div className="w-layout-blockcontainer container-default w-container">
               <div className="w-layout-grid grid-2-columns _1fr---1fr">
-                <div
+                <div style={{ opacity: 0, filter: "blur(8px)" }} data-w-id="f5592dd4-48df-4463-a273-9760ffece4a8"
                  
                  
                   className="lightbox-wrapper"
                 >
-                  <a
+                  <a data-w-id="7126f0a6-2175-6793-bb27-2336a6a8f5bb"
                     href="#"
                    
                     className="lightbox-link w-inline-block w-lightbox"
                     ><img
-                      src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/6838c0b6353fd557c5547bec_play-icon-cloudwhisper-webflow-template.avif"
+                      src={img(playIconCloudwhisperWebflowTemplate)}
                       loading="lazy"
                       width="270"
                       height="270"
@@ -22,22 +30,20 @@ export default function AboutVideoSection() {
                     </a
                   ><img
                     className="lightbox-image"
-                    src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/6838c025f204237d64176dac_about-us-image-cloudwhisper-webflow-template.avif"
+                    src={img(aboutUsImageCloudwhisperWebflowTemplate)}
                     width="1842"
                     height="1260"
                     alt="About Us - CloudWhisper - Webflow Template | BRIX Templates"
                    
                     sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px"
                     loading="lazy"
-                    srcSet="
-                      https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/6838c025f204237d64176dac_about-us-image-cloudwhisper-webflow-template-p-500.avif   500w,
-                      https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/6838c025f204237d64176dac_about-us-image-cloudwhisper-webflow-template-p-800.avif   800w,
-                      https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/6838c025f204237d64176dac_about-us-image-cloudwhisper-webflow-template-p-1080.avif 1080w,
-                      https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/6838c025f204237d64176dac_about-us-image-cloudwhisper-webflow-template.avif        1842w
-                    "
+                    srcSet={`${img(aboutUsImageCloudwhisperWebflowTemplateP500)}   500w,
+                      ${img(aboutUsImageCloudwhisperWebflowTemplateP800)}   800w,
+                      ${img(aboutUsImageCloudwhisperWebflowTemplateP1080)} 1080w,
+                      ${img(aboutUsImageCloudwhisperWebflowTemplate)}        1842w`}
                   />
                 </div>
-                <div
+                <div style={{ opacity: 0, filter: "blur(8px)" }} data-w-id="7b344d24-033f-1bb1-6509-070c03da106c"
                   id="w-node-_7b344d24-033f-1bb1-6509-070c03da106c-7bed29e2"
                  
                  
@@ -58,7 +64,7 @@ export default function AboutVideoSection() {
                        
                         className="position-relative---z-index-1"
                       >
-                        <a
+                        <a data-w-id="d7bc6201-7e14-514d-b502-57acf8dc3329"
                          
                           href="/company-pages/pricing"
                           className="primary-button w-inline-block"

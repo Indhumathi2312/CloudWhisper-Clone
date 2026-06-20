@@ -1,10 +1,28 @@
+import logoWhiteCloudwhisperWebflowTemplate from "@/assets/images/682ce90bbf576e17a577bd28_logo-white-cloudwhisper-webflow-template.svg";
+import qrCodeCloudwhisperWebflowTemplate from "@/assets/images/682cece0a23f2474f2e1d2cf_qr-code-cloudwhisper-webflow-template.svg";
+import webflowIconCloudwhisperWebflowTemplate from "@/assets/images/682cbd25a8a6ff7ebab8a0d1_webflow-icon-cloudwhisper-webflow-template.svg";
+import footerAvatar01CloudwhisperWebflowTemplate from "@/assets/images/682cf2e4fb3e065e94163164_footer-avatar-01-cloudwhisper-webflow-template.avif";
+import footerAvatar02CloudwhisperWebflowTemplate from "@/assets/images/682cf2e4ecdda9148a96ac44_footer-avatar-02-cloudwhisper-webflow-template.avif";
+import footerAvatar03CloudwhisperWebflowTemplate from "@/assets/images/682cf2e49665cb8d18d407f7_footer-avatar-03-cloudwhisper-webflow-template.avif";
+import footerAvatar04CloudwhisperWebflowTemplate from "@/assets/images/682cf2e4bcd55256dd8c7c54_footer-avatar-04-cloudwhisper-webflow-template.avif";
+import xIconWhiteTechvoiceWebflowTemplate from "@/assets/images/682ba94dd753cc5d9934b89f_x-icon-white-techvoice-webflow-template.svg";
+import verticalShapeCloudwhisperWebflowTemplate from "@/assets/images/682cf631114e7650cebd3522_vertical-shape-cloudwhisper-webflow-template.svg";
+import horizontalShapeCloudwhisperWebflowTemplate from "@/assets/images/682cf630bf576e17a57fd554_horizontal-shape-cloudwhisper-webflow-template.svg";
+import footerBg1CloudwhisperWebflowTemplate from "@/assets/images/68b0b7ae552bd57d48a1a2cc_footer-bg-1-cloudwhisper-webflow-template.avif";
+import footerBg1CloudwhisperWebflowTemplateP500 from "@/assets/images/68b0b7ae552bd57d48a1a2cc_footer-bg-1-cloudwhisper-webflow-template-p-500.png";
+import footerBg1CloudwhisperWebflowTemplateP800 from "@/assets/images/68b0b7ae552bd57d48a1a2cc_footer-bg-1-cloudwhisper-webflow-template-p-800.png";
+import footerBg2CloudwhisperWebflowTemplate from "@/assets/images/68b0b7aecce34ebefe9fb97e_footer-bg-2-cloudwhisper-webflow-template.avif";
+import footerBg2CloudwhisperWebflowTemplateP500 from "@/assets/images/68b0b7aecce34ebefe9fb97e_footer-bg-2-cloudwhisper-webflow-template-p-500.avif";
+import footerBg3CloudwhisperWebflowTemplate from "@/assets/images/68b0b7ae1dd90d40cb5fb283_footer-bg-3-cloudwhisper-webflow-template.avif";
+import footerBg3CloudwhisperWebflowTemplateP500 from "@/assets/images/68b0b7ae1dd90d40cb5fb283_footer-bg-3-cloudwhisper-webflow-template-p-500.png";
+import footerBg3CloudwhisperWebflowTemplateP800 from "@/assets/images/68b0b7ae1dd90d40cb5fb283_footer-bg-3-cloudwhisper-webflow-template-p-800.png";
+
+const img = (asset) => asset.src ?? asset;
+
 export default function Footer() {
   return (
     <footer className="footer-wrapper">
-            <div
-             
-              className="footer-main-section"
-            >
+            <div data-w-id="f1ff1ac2-5ccd-56f8-612a-0570791caa19" className="footer-main-section">
               <div
                 className="w-layout-blockcontainer container-default position-relative---z-index-1 w-container"
               >
@@ -15,7 +33,7 @@ export default function Footer() {
                         href="/home-pages/home-v1"
                         className="footer-logo w-inline-block"
                         ><img
-                          src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/682ce90bbf576e17a577bd28_logo-white-cloudwhisper-webflow-template.svg"
+                          src={img(logoWhiteCloudwhisperWebflowTemplate)}
                           loading="lazy"
                           width="194"
                           height="29"
@@ -28,7 +46,7 @@ export default function Footer() {
                       </p>
                     </div>
                     <img
-                      src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/682cece0a23f2474f2e1d2cf_qr-code-cloudwhisper-webflow-template.svg"
+                      src={img(qrCodeCloudwhisperWebflowTemplate)}
                       loading="lazy"
                       width="83"
                       height="83"
@@ -105,7 +123,7 @@ export default function Footer() {
                             target="_blank"
                             className="footer-link highligthed w-inline-block"
                             ><img
-                              src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/682cbd25a8a6ff7ebab8a0d1_webflow-icon-cloudwhisper-webflow-template.svg"
+                              src={img(webflowIconCloudwhisperWebflowTemplate)}
                               loading="eager"
                               width="28"
                               height="28"
@@ -151,28 +169,28 @@ export default function Footer() {
                         <div className="flex-center vertical-mbp">
                           <div className="footer-avatars-wrapper">
                             <img
-                              src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/682cf2e4fb3e065e94163164_footer-avatar-01-cloudwhisper-webflow-template.avif"
+                              src={img(footerAvatar01CloudwhisperWebflowTemplate)}
                               loading="lazy"
                               width="144"
                               height="144"
                               alt="Footer Avatar - CloudWhisper - Webflow Template | BRIX Templates"
                               className="circle-avatar first"
                             /><img
-                              src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/682cf2e4ecdda9148a96ac44_footer-avatar-02-cloudwhisper-webflow-template.avif"
+                              src={img(footerAvatar02CloudwhisperWebflowTemplate)}
                               loading="lazy"
                               width="144"
                               height="144"
                               alt="Footer Avatar - CloudWhisper - Webflow Template | BRIX Templates"
                               className="circle-avatar"
                             /><img
-                              src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/682cf2e49665cb8d18d407f7_footer-avatar-03-cloudwhisper-webflow-template.avif"
+                              src={img(footerAvatar03CloudwhisperWebflowTemplate)}
                               loading="lazy"
                               width="144"
                               height="144"
                               alt="Footer Avatar - CloudWhisper - Webflow Template | BRIX Templates"
                               className="circle-avatar"
                             /><img
-                              src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/682cf2e4bcd55256dd8c7c54_footer-avatar-04-cloudwhisper-webflow-template.avif"
+                              src={img(footerAvatar04CloudwhisperWebflowTemplate)}
                               loading="lazy"
                               width="144"
                               height="144"
@@ -227,7 +245,7 @@ export default function Footer() {
                       target="_blank"
                       className="social-square-icon-link white w-inline-block"
                       ><img
-                        src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/682ba94dd753cc5d9934b89f_x-icon-white-techvoice-webflow-template.svg"
+                        src={img(xIconWhiteTechvoiceWebflowTemplate)}
                         loading="eager"
                         width="20"
                         height="20"
@@ -252,56 +270,50 @@ export default function Footer() {
                 </div>
               </div>
               <img
-                src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/682cf631114e7650cebd3522_vertical-shape-cloudwhisper-webflow-template.svg"
+                src={img(verticalShapeCloudwhisperWebflowTemplate)}
                 loading="lazy"
                 width="70"
                 height="295"
                 alt=""
                 className="footer-bg-shape-left"
               /><img
-                src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/682cf631114e7650cebd3522_vertical-shape-cloudwhisper-webflow-template.svg"
+                src={img(verticalShapeCloudwhisperWebflowTemplate)}
                 loading="lazy"
                 width="70"
                 height="295"
                 alt=""
                 className="footer-bg-shape-right"
               /><img
-                src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/682cf630bf576e17a57fd554_horizontal-shape-cloudwhisper-webflow-template.svg"
+                src={img(horizontalShapeCloudwhisperWebflowTemplate)}
                 loading="lazy"
                 width="294"
                 height="70"
                 alt=""
                 className="footer-bg-shape-bottom"
               /><img
-                src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/68b0b7ae552bd57d48a1a2cc_footer-bg-1-cloudwhisper-webflow-template.avif"
+                src={img(footerBg1CloudwhisperWebflowTemplate)}
                 loading="lazy"
                 sizes="100vw"
-                srcSet="
-                  https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/68b0b7ae552bd57d48a1a2cc_footer-bg-1-cloudwhisper-webflow-template-p-500.png  500w,
-                  https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/68b0b7ae552bd57d48a1a2cc_footer-bg-1-cloudwhisper-webflow-template-p-800.png  800w,
-                  https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/68b0b7ae552bd57d48a1a2cc_footer-bg-1-cloudwhisper-webflow-template.avif      2880w
-                "
+                srcSet={`${img(footerBg1CloudwhisperWebflowTemplateP500)}  500w,
+                  ${img(footerBg1CloudwhisperWebflowTemplateP800)}  800w,
+                  ${img(footerBg1CloudwhisperWebflowTemplate)}      2880w`}
                 alt=""
                 className="section-bg-gradient left"
               /><img
-                src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/68b0b7aecce34ebefe9fb97e_footer-bg-2-cloudwhisper-webflow-template.avif"
+                src={img(footerBg2CloudwhisperWebflowTemplate)}
                 loading="lazy"
                 sizes="100vw"
-                srcSet="
-                  https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/68b0b7aecce34ebefe9fb97e_footer-bg-2-cloudwhisper-webflow-template-p-500.avif  500w,
-                  https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/68b0b7aecce34ebefe9fb97e_footer-bg-2-cloudwhisper-webflow-template.avif       2880w
-                "
+                srcSet={`${img(footerBg2CloudwhisperWebflowTemplateP500)}  500w,
+                  ${img(footerBg2CloudwhisperWebflowTemplate)}       2880w`}
                 alt=""
                 className="section-bg-gradient middle"
               /><img
-                src="https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/68b0b7ae1dd90d40cb5fb283_footer-bg-3-cloudwhisper-webflow-template.avif"
+                src={img(footerBg3CloudwhisperWebflowTemplate)}
                 loading="lazy"
                 sizes="100vw"
-                srcSet="
-                  https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/68b0b7ae1dd90d40cb5fb283_footer-bg-3-cloudwhisper-webflow-template-p-500.png  500w,
-                  https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/68b0b7ae1dd90d40cb5fb283_footer-bg-3-cloudwhisper-webflow-template-p-800.png  800w,
-                  https://cdn.prod.website-files.com/682751255bcef0a07bed2a01/68b0b7ae1dd90d40cb5fb283_footer-bg-3-cloudwhisper-webflow-template.avif      2880w
-                "
+                srcSet={`${img(footerBg3CloudwhisperWebflowTemplateP500)}  500w,
+                  ${img(footerBg3CloudwhisperWebflowTemplateP800)}  800w,
+                  ${img(footerBg3CloudwhisperWebflowTemplate)}      2880w`}
                 alt=""
                 className="section-bg-gradient right"
               />

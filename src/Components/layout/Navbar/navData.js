@@ -1,8 +1,12 @@
-const CDN = "https://cdn.prod.website-files.com/682751255bcef0a07bed2a01";
+import headerLogoTechvoiceWebflowTemplate from "@/assets/images/682bc04f41e0c4bda013703c_header-logo-techvoice-webflow-template.svg";
+import logoWhiteCloudwhisperWebflowTemplate from "@/assets/images/682ce90bbf576e17a577bd28_logo-white-cloudwhisper-webflow-template.svg";
+import webflowIconCloudwhisperWebflowTemplate from "@/assets/images/682cbd25a8a6ff7ebab8a0d1_webflow-icon-cloudwhisper-webflow-template.svg";
 
-export const LOGO_LIGHT = `${CDN}/682bc04f41e0c4bda013703c_header-logo-techvoice-webflow-template.svg`;
-export const LOGO_DARK = `${CDN}/682ce90bbf576e17a577bd28_logo-white-cloudwhisper-webflow-template.svg`;
-export const WEBFLOW_ICON = `${CDN}/682cbd25a8a6ff7ebab8a0d1_webflow-icon-cloudwhisper-webflow-template.svg`;
+const img = (asset) => asset.src ?? asset;
+
+export const LOGO_LIGHT = img(headerLogoTechvoiceWebflowTemplate);
+export const LOGO_DARK = img(logoWhiteCloudwhisperWebflowTemplate);
+export const WEBFLOW_ICON = img(webflowIconCloudwhisperWebflowTemplate);
 
 export const NAV_LINKS = [
   { label: "Home", href: "#home" },
